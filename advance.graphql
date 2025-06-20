@@ -1,0 +1,37 @@
+# 1. Characters in a Specific Film (A New Hope, ID: "ZmlsbXM6MQ==")
+{
+  film(id: "ZmlsbXM6MQ==") {
+    title
+    characterConnection {
+      characters {
+        name
+      }
+    }
+  }
+}
+
+# 2. Characters Appearing in Multiple Films (First 10 Characters)
+{
+  allPeople(first: 10) {
+    people {
+      name
+      filmConnection {
+        films {
+          title
+        }
+      }
+    }
+  }
+}
+
+# 3. Total Number of Characters in Each Film
+{
+  allFilms {
+    films {
+      title
+      characterConnection {
+        totalCount
+      }
+    }
+  }
+}

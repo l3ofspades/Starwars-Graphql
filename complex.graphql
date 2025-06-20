@@ -1,0 +1,73 @@
+# 1. Full Profile: Luke Skywalker (Films, Starships, Homeworld)
+{
+  person(id: "cGVvcGxlOjE=") {
+    name
+    homeworld {
+      name
+    }
+    filmConnection {
+      films {
+        title
+      }
+    }
+    starshipConnection {
+      starships {
+        name
+      }
+    }
+  }
+}
+
+# 2. First 5 Characters and Their Homeworlds' Populations
+{
+  allPeople(first: 5) {
+    people {
+      name
+      homeworld {
+        name
+        population
+      }
+    }
+  }
+}
+
+# 3. First 3 Vehicles, Their Pilots, and the Pilots' Species
+{
+  allVehicles(first: 3) {
+    vehicles {
+      name
+      pilotConnection {
+        pilots {
+          name
+          species {
+            name
+          }
+        }
+      }
+    }
+  }
+}
+
+# 4. First 3 Films: Characters, Planets, Starships
+{
+  allFilms(first: 3) {
+    films {
+      title
+      characterConnection {
+        characters {
+          name
+        }
+      }
+      planetConnection {
+        planets {
+          name
+        }
+      }
+      starshipConnection {
+        starships {
+          name
+        }
+      }
+    }
+  }
+}

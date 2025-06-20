@@ -1,0 +1,34 @@
+# 1. List All Films
+{
+  allFilms {
+    films {
+      title
+    }
+  }
+}
+
+# 2. Fetch a Specific Character (Luke Skywalker)
+{
+  person(id: "cGVvcGxlOjE=") {
+    name
+  }
+}
+
+# 3. First 5 Planets
+{
+  allPlanets(first: 5) {
+    planets {
+      name
+    }
+  }
+}
+
+# 4. Starships Info
+{
+  allStarships(first: 3) {
+    starships {
+      name
+      model
+    }
+  }
+}

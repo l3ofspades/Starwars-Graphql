@@ -1,0 +1,44 @@
+# 1. First 5 Characters and Their Starships
+{
+  allPeople(first: 5) {
+    people {
+      name
+      starshipConnection {
+        starships {
+          name
+        }
+      }
+    }
+  }
+}
+
+# 2. Species and Their Languages (First 5)
+{
+  allSpecies(first: 5) {
+    species {
+      name
+      language
+    }
+  }
+}
+
+# 3. Planets and Their Climates (First 5)
+{
+  allPlanets(first: 5) {
+    planets {
+      name
+      climates
+    }
+  }
+}
+
+# 4. Vehicles and Their Costs (First 3)
+{
+  allVehicles(first: 3) {
+    vehicles {
+      name
+      costInCredits
+    }
+  }
+}
+
